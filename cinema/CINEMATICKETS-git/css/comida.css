@@ -1,0 +1,44 @@
+h1{
+  text-align: center;
+ }
+ /* general para las imagenes */
+.elipapa{
+    width:100%;
+    display: block;
+}
+/* texto de las imagenes */
+.etexto{
+    text-align: left;
+    color: #47494c;
+    display:block;
+    margin-left:20px;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+/* imagenes */
+.imgComida{
+    padding: 0%;
+    margin: 10px;
+    border: none;
+    width: 450px;
+
+
+}
+@media screen and (min-width: 900px) {
+    .imgComida{
+        padding: 0%;
+        margin: 10px;
+        border: none;
+        width: 450px;
+    }
+    .etexto{
+        text-align: left;
+        color: #47494c;
+        display:flex;
+        margin-left:20px;
+        align-items: center;
+        font-family: 'Noto Sans', sans-serif;
+    
+    }
+}
