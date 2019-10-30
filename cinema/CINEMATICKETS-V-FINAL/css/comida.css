@@ -1,0 +1,26 @@
+h1{
+  text-align: center;
+ }
+ /* general para las imagenes */
+.elipapa{
+    width:100%;
+    display: block;
+}
+/* texto de las imagenes */
+.etexto{
+    text-align: left;
+    color:chocolate ;
+    display:flex;
+    margin-left:20px;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+/* imagenes */
+.imgComida{
+    padding: 5%;
+    margin: 10px; 
+    border: 2px solid rgb(117, 57, 57); 
+    width: 250px;
+
+}

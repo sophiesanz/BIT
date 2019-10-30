@@ -1,0 +1,10 @@
+<!DOCTYPE html> : HTML5 -- browser knows what type of document to expect.
+<html lang="en"> : declare the language of a Web page or a portion of a Web page
+<head> : is a container for all the head elements. Some elements can go inside:
+        <title> (this element is required in an HTML document)
+        <style>
+        <base>
+        <link>
+        <meta>
+        <script>
+        <noscript>/

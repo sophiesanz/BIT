@@ -1,0 +1,155 @@
+.img-container{
+    background-color:rgb(40,62,74);
+    height:70%;
+    background-size: cover;
+    background-attachment:fixed;
+    filter:opacity(0.9);
+    display:block;
+    padding:5%;
+}
+.inner-container{
+    text-align: center;
+    width:100%;
+    color:white;
+    height:auto;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+
+    font-size: 20px;
+    text-align: left;
+    font-weight: 200;
+}
+.logo-banner{
+    width:50px;
+    height:50px;
+    padding-right: 30px;
+}
+
+
+#banner{
+    height:60px;
+    text-align: center;
+    width:100%;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: 4px dotted rgb(40, 62, 74);
+    background-color: rgb(40,62,74);
+    color:white;
+    
+}
+.icon{
+  text-align: center;
+  width:100%;
+  margin: 5%;
+}
+.button_link{
+    text-decoration:none;
+    color:rgb(40,62,74);
+}
+.button_link:hover{
+    background-color: rgb(40,62,74);
+    color:white;
+}
+
+.button_font{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    color:rgb(40,62,74);
+    text-decoration:none;
+
+}
+.button_font:hover{
+    background-color: rgb(40,62,74);
+    color:white;
+    
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 400;
+}
+table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+dl{
+    margin:5%;
+}
+.logoimg{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+body{
+    margin-left: 25%;
+    margin-right: 25%; 
+    background-color: rgb(245,245,245)
+}
+.divimg{
+    text-align: center;
+}
+.logoimg:hover{
+    filter:grayscale(100%);
+}
+
+footer{
+    bottom:0;
+    color:white;
+    font-size: 20px;
+    padding-top:20px;
+    background-color: rgb(40,62,74);
+
+}
+.container{
+   
+    padding-right: 15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    color:white;
+    
+}
+.column{
+    flex:0 0 50%;
+    text-align: left;
+    color:white;
+}
+.social_icons{
+    width:20px;
+    height:20px;
+}
+.nobullet{
+    list-style: none;           /*no viñetas */
+    color:white;
+}
+
+.social_ico:link{
+     text-decoration:none;      /*no subrayado el link */
+    color:white;
+}
+.social_ico:visited{
+    color:gainsboro;;
+}
+.social_ico:hover{
+    color:gainsboro;
+}
+.social_ico:active{
+    color:white; 
+}
+.social_ico:hover{
+    background-color: rgb(40,62,74);
+    color:white;
+}
+.gallery_margins{
+    margin:10% 0;
+}
+.tr{
+    padding:10% 0;
+}
+

@@ -1,0 +1,140 @@
+.footer{
+    background:#5a5a5a;
+    height:auto;
+    width:100%;
+    position:relative;
+    bottom:0;
+}
+.brand-gray{
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.brand-gray img{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.krights{
+    height:50px;
+    background: black;
+    position: inherit;
+    bottom:0;
+    color:#ffffff;
+    width:100%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    line-height:50px;
+    font-size:0.8rem;
+}
+
+.footer-final{
+    width:90%;
+    display:block;
+    padding: 10px;
+    margin:0 auto;
+}
+.servicioCliente{
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+}
+
+.tituloquejas{
+    display:flex;
+}
+
+
+.icon-whatsapp::before {
+    color:#ffffff;
+    content: "\ea93";
+    font-size: 2rem;
+    margin-right: 10px;
+
+}
+.tituloquejas p{
+   color:#ffffff;
+   text-indent:0px;
+   text-transform: uppercase;
+   font-weight:bold;
+} 
+.servicioCliente span{
+    color:#ffffff;
+    text-indent:0px;
+    font-size: .80rem;
+ } 
+@media screen and (min-width: 520px) {
+    .brand-gray{
+        width: 100%;
+        margin:0 auto;
+        display:block;
+        align-items: center;
+        height: auto;
+    }
+    .brand-gray img{
+       width:70%;
+    }
+
+    .servicioCliente{
+        width:50%;
+        margin: 20px;
+    }
+    .footer-final {
+        width: 100%;
+        display: flex;
+        height: auto;
+        padding: 0px;
+    }
+    .krights{
+        height:50px;
+        background: black;
+        bottom:0;
+        color:#ffffff;
+        width:100%;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        line-height:50px;
+        font-size:0.8rem;
+    }
+    .footer{
+        background:#5a5a5a;
+        height:auto;
+        width:100%;
+        position:relative;
+        bottom:0;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    .brand-gray{
+        width: 30%;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .brand-gray img{
+       width:70%;
+    }
+    .footer{
+        background:#5a5a5a;
+        height:auto;
+        width:100%;
+        position:relative;
+        bottom:0;
+    }
+    .servicioCliente{
+        width:50%;
+        margin: 20px;
+    }
+    .footer-final {
+        width: 100%;
+        display: flex;
+        height:auto;
+    }
+    
+}
+

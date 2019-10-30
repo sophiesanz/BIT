@@ -1,0 +1,51 @@
+ul{
+    list-style-type: circle;
+}
+
+table,th,td{
+    border: 2px solid rgb(0, 217, 255);
+    border-collapse: collapse;
+    background:rgb(175, 217, 237);
+}
+
+h1{
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+    box-shadow: 2px 2px 5px gray;
+    margin:5%;
+    padding:2%;
+}
+
+.centered{
+    text-align: center;
+}
+table{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding:10px 0px;
+}
+
+.table1{
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding:10px 0px;
+
+}
+img:hover{
+    filter:blur(5px)
+}
+
+body{
+    background-image: url("/class09_19/img/beach.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    filter:opacity(0.9);
+}

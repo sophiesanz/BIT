@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+/* body{
+
+}  */
+
+.ssRegisterContainer{
+    margin:auto;
+    max-width: 960px;
+    padding:20px 40px;
+}
+
+.blueCinemaTickets{
+    color: #0f5da5;
+}
+
+.ssRegisterContainer h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.ssRegisterContainer small{
+    font-size: 90%;
+    font-weight: 700;
+}
+.ssRegisterContainer p {
+    font-size: 14px;
+    margin: 6px 0;
+    line-height: 140%;
+}
+.ssRegisterContainer ul {
+    height: 90px;
+    font-size: 14px;
+    margin: 6px 0;
+    line-height: 140%;
+}
+.ssRegisterContainer button {
+    text-decoration: none;
+    font-size: 16px;
+    background: linear-gradient(#0d61a6, #004d97);
+    border-top: 1px solid #2672af;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+/* MODAL Style */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    /* overflow:auto; */
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.4);
+}
+.modalContent{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding:20px;
+    border: 1px solid #888;
+    width:30%;
+}
+.modalContent h2{
+    color: #237bc7;
+    font-size: 20px;
+    padding: 12px 0 12px 20px;
+}
+
+.modalContent form{
+    color: #47494c;
+    margin-bottom: 6px;
+    padding: 20px 25px;
+}
+#nameModal{
+    width:100%;
+}
+#emailModal{
+    width:100%;
+}
+#passwordModal{
+    width:100%;
+}
+#sendModal{
+    margin-top: 10px;
+    background: linear-gradient(#0d61a6, #004d97);
+    width:50%;
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+#close{
+    color:#aaa;
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+    z-index:5;
+}
+#close:hover,
+#close:focus{
+    color:black;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* FORM Style */
+.ssFormContainer{
+    margin:auto;
+    max-width: 960px;
+    padding:20px 60px;
+}
+
+#register{
+    text-align: left;
+    color:black;
+}
+.ssGridContainer{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(1,1fr);
+}
+.formPosition{
+    grid-column:1/12;
+    grid-row:1/2;
+}
+
+.formPosition h2{
+    background: #237bc7;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 0 12px 20px;
+    position: relative;
+}
+
+.formPosition form{
+    background: #47494c;
+    color: #fff;
+    margin-bottom: 6px;
+    padding: 20px 25px;
+    
+}
+.formPosition form span{
+    color: #fff;
+}
+.next{
+    display:flex;
+}
+#email{
+    width:100%;
+}
+#password{
+    width:100%;
+}
+#name{
+    width:93%;
+}
+#lastname{
+    width:100%;
+}
+#phone{
+    width:100%;
+}
+#register{
+    /* margin-top: 10px; */
+    background: linear-gradient(#0d61a6, #004d97);
+    color:white;
+}
+
+@media screen and (min-width: 900px) {
+    .formPosition {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .ssRegisterContainer button {  
+        width: 30%;
+        text-align: center;
+    }
+}
+
+
+

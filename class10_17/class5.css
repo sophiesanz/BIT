@@ -1,0 +1,15 @@
+.padre{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+.hijo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.color{
+    background:purple;
+}

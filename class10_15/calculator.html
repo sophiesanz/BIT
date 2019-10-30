@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" > 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>BIT | Calculator</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="calculator.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
+       
+    </head>
+
+        <body>
+            <h1 id="titulo" > The Calculator</h1>
+            
+            <h2 class= "">Operations: Addition, Subtraction, Multiplication, Division </h2>
+            <div class="container_grid">
+            <div class="num1"><input id ="num1" type="number" ></div>
+            <div class="num2"><input id ="num2" type="number" ></div>
+            <div class="operations">
+                <button id="+" onclick="enter_suma()">+</button>
+                <button id="-" onclick="enter_resta()">-</button>
+                <button id="*" onclick="enter_multiplicacion()">*</button>
+                <button id="/" onclick="enter_division()">/</button>
+            </div>
+            <!-- <button id="=" onclick="enter()">=</button> -->
+            <output id=result class="resultado"></output>
+            </div>
+            
+            
+
+            <script src="/class10_15/calculator.js"></script>
+
+        </body>
+    </html>
+
+    

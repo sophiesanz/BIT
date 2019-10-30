@@ -1,0 +1,161 @@
+/*ESTILOS SECTION RESULTADOS DE BUSQUEDA */
+.PF-search-results{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.PF-content-search{
+    width: 100%;
+    display: flex;
+}
+
+/* --- Estilos - Filtros Resultados de busqueda --- */
+.PF-search-filters{
+    width: 20%;
+}
+.PF-search-filters-days, .PF-search-filters-category{
+    padding: 10px;
+}
+.PF-search-filters .PF-button-day, .PF-search-filters .PF-button-category{
+    background: #0a0a29;
+    color:#fff;
+    width: 100%;
+    padding: 12px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.PF-button-day .icon-calendar, .PF-button-category .icon-film {
+    display: inline-flex;
+}
+.PF-button-day .icon-calendar p, .PF-button-category .icon-film p {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+}
+#PF-select-days, #PF-select-category{
+    width: 100%;
+    background: #ece6e6;
+    display: none;
+}
+#PF-select-days form, #PF-select-category form{
+    padding: 20px;
+}
+#PF-select-days select, #PF-select-category select{
+    display: block;
+    margin: auto;
+    width: 95%;
+    background: #fff;
+    border: 1px solid #a8a2a2;
+    border-radius:3px;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance:none;
+    background-image: url(/img/Resul_busqueda/arrow_img.svg);
+    background-position: right 10px top 50%,0 0;
+    background-repeat: no-repeat,repeat;
+    background-size: 10px;
+}
+/* --- END Estilos - Filtros Resultados de busqueda --- */
+
+/* --- Estilos - Tablas Peliculas --- */
+.PF-busqueda-list{
+    width: 79%;
+    background: #fff;
+}
+.PF-list-box{
+    width: 100%;
+     display: flex;
+    justify-content:start;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+.PF-list-elements{
+    position: relative;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.PF-list-name-movie{
+    position: absolute;
+    bottom: -21px;
+    text-align: center;
+    width: 100%;
+    opacity: 0; 
+    height: 60px;
+    padding-top: 5px;
+}
+.PF-list-img-movie{
+    display: block;
+}
+
+.PF-list-img-movie img{
+width: 100%;
+}
+.PF-list-name-movie a{
+    color:#fff;
+    text-decoration: none;
+}
+.PF-list-name-movie a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+.PF-list-cont-movie{
+    position: relative;
+    
+}
+.PF-list-cont-movie:hover .PF-list-name-movie{
+    bottom: 6px;
+    opacity: 1; 
+    background: rgba(0, 0, 0, 0.568);
+    transition: all 0.3s;
+}
+.PF-see-more{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 6px 0px;
+   background: linear-gradient(to right, #01c1b0 11%,#0081ba 100%);
+    top:5px;
+    border-radius: 10px;
+    margin: auto;
+}
+.PF-see-more:hover{
+    background: linear-gradient(to left, #01c1b0 11%,#0081ba 100%);
+}
+.PF-see-more a{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+}
+/* --- END Estilos - Tablas Peliculas --- */
+
+/* END ESTILOS SECTION RESULTADOS DE BUSQUEDA */
+
+
+/* Responsive */
+@media only screen and (min-width: 0px) and (max-width: 958px){
+
+    .PF-content-search{
+        display: inline;
+    }
+
+    .PF-search-filters{
+        width: 100%;
+    }
+    .PF-busqueda-list{
+        width: 100%;
+    }
+    .PF-list-elements{
+        width: 50%;
+    }
+    .PF-search-filters-days, .PF-search-filters-category{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+/* End Responsive */
+

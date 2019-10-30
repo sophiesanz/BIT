@@ -1,0 +1,29 @@
+
+h1{
+    color:red;
+    font-size: 70px;
+}
+p{
+    color:rgb(0, 115, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align:center;
+    background-color: aquamarine;
+}
+u{
+    color:blueviolet;
+}
+hr{
+    border: 1.5px solid rgb(255, 153, 255);
+}
+body{
+    background-image: url(../class09_16/img/klauss.jpeg);
+    background-size: cover;
+    background-attachment:fixed;
+    
+}
+
+audio{
+    align-content: center;
+}
+

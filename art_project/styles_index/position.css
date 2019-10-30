@@ -1,0 +1,50 @@
+.caja1{
+    border:1px solid red;
+    width:100%;
+    height: 200px;
+    background: blue;
+    /*position: static;*/
+    position: relative;   /*Empieza a tomar los margenes posteriores desde la posicion inicial del elemento pero deja el vacio*/
+    left:50%;
+    top:100px;
+}
+
+.hijo{
+    border:1px solid red;
+    width:50%;
+    height: 100px;
+    background: white;
+    position: absolute;   /*Empieza a tomar los margenes desde el padre mas grande que es el body sino el padre inmediatamente anterior que debe tener una posicion relativa*/
+    bottom:0;
+    right:0;
+    font-size:50%;
+    color:black;
+}
+
+.papa{
+    width:70%;
+    height:200px;
+    background: black;
+    position:relative;
+    color:white;
+    border:1px solid blue;
+
+}
+
+.fijo{
+    border:1px solid blue;
+    width:20%;
+    height: 100px;
+    position: fixed;  /* Toma como padre el body */ 
+    bottom:0;
+    right:0;
+    background: pink;
+}
+.pegajoso{
+    border:1px solid blue;
+    width:20%;
+    height: 100px;
+    position: sticky;  /* Toma como padre el body */ 
+    top:0;
+    background: red;
+}

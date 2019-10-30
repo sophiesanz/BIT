@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CINEMANZANA</title>
+    <link rel="stylesheet" href="css/style-cinema.css">
+    <link rel="stylesheet" href="css/megamenu.css">
+    <link rel="stylesheet" href="css/arestilo.css">
+    <link rel="stylesheet" href="css/PF-search-results.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="fonts_icons/icon_style.css">
+</head>
+<body>
+        <div class="nav-hamburguer">
+                <div class="drop-ham">
+                <button class="hambtn"><span class="icon-menu"></span></button>
+                <div class="hamburguer-content blue">
+                    <ul>
+                        <li>
+                            <a href="">
+                                    <img src="img/img-1.jpg" alt=""  class="kimgMobile">
+                                    <p  class="kpMobile">Confitería</p>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="">
+                            <img src="img/img-2.jpg" alt="" class="kimgMobile">
+                            <p class="kpMobile">Promociones</p>
+                            </a>
+                        </li>
+                        <li>     <a href="">
+                                <img src="img/img-3.jpg" alt=""  class="kimgMobile">
+                                <p  class="kpMobile">Tarjeta CinemaTickets</p>
+                                </a>
+                        </li>
+                        <li>
+                                <a href="">
+                                <img src="img/img-4.jpg" alt=""  class="kimgMobile">
+                                <p  class="kpMobile">Reservas</p>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    <header>
+        <section>
+            <div class="brand">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="data">
+                    <form action="" name="cinemas">
+                        <select class="city" id="city" onchange="arCityChange()">
+                            <option value="volvo">Ciudad</option>
+                            <option value="volvo">Bogotá</option>
+                            <option value="saab">Cali</option>
+                            <option value="opel">Medellin</option>
+                        </select>
+                        <select class="city" id="arteatro" onchange="arTeatroChange()">
+                            <option value="volvo">Teatro</option>
+                        </select>
+                        <select class="city" id="arpeli" onchange="arPeliChange()">
+                            <option value="volvo">Pelicula</option>
+                        </select>
+                        <select class="city" id="arhora">
+                            <option value="volvo">Hora</option>
+                        </select>
+
+
+
+                        <input type="button" value="Ver cartelera" class="blue anchoBtn">
+
+                    </form>
+                </div>
+                <div class="registro">
+                    <form action="" name="register">
+                            <span class="icon-user"></span>
+                        <input type="button" class="iniciar" value="Ingresar">
+                            
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+                  
+                   <div class="nav-bar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu
+                        </button>
+                        <div class="dropdown-content">
+                          <div class="menu-header">
+                            <h2>No te pierdas los productos que tenemos para ti</h2>
+                          </div>   
+                          <div class="menu-body">
+                            <a href="#">
+                                <img src="img/img-1.jpg" alt="">
+                                <p>Confitería</p>
+                            </a>
+                            <a href="#">
+                              <img src="img/img-2.jpg" alt="">
+                              <p>Promociones</p>
+                            </a>
+                            <a href="#">
+                              <img src="img/img-3.jpg" alt="">
+                              <p>Tarjeta CinemaTickets</p>
+                            </a>
+                            <a href="#">
+                              <img src="img/img-4.jpg" alt="">
+                              <p>Reservas</p>
+                            </a>
+                           
+                          </div>
+                             
+
+                        </div>
+                      </div> 
+                      <div class="kwelcome">
+                        <h1>Bienvenid@</h1>
+                      </div>
+                      <div class="kredes">
+                        <ul>
+                            <li>
+                                    <span class="icon-youtube2"></span>
+                            </li>
+                            <li>
+                                    <span class="icon-instagram"></span>
+                            </li>
+                            <li>
+                                    <span class="icon-facebook"></span>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+          
+        </section>
+    </header>
+
+
+    <main>
+
+         <!-- -Search-Results  -->
+        <section class="PF-search-results">
+                <div class="PF-content-search">
+                    <div class="PF-search-filters">
+                        <div class="PF-search-filters-days">
+                            <button class="PF-button-day" onClick="PFshowday('PF-select-days')">
+                                <i class="icon-calendar">
+                                    <p>Día</p>
+                                </i>
+                                <i class="icon-circle-down"></i>
+                            </button>
+    
+                            <div id="PF-select-days">
+                                <form action="" name="movies">
+                                    <select class="PF-movie-day-c" id="PF-movie-day-i" onchange="FiltroDay(this.value);">
+                                        <option value="day0">Seleccionar</option>
+                                        <option value="day1">2 Noviembre</option>
+                                        <option value="day2">3 Noviembre</option>
+                                        <option value="day3">4 Noviembre</option>
+                                        <option value="day4">5 Noviembre</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="PF-search-filters-category">
+                            <button class="PF-button-category" onClick="PFshowcategory('PF-select-category')">
+                                <i class="icon-film">
+                                    <p>Genero</p>
+                                </i>
+                                <i class="icon-circle-down"></i>
+                            </button>
+    
+                            <div id="PF-select-category">
+                                <form action="" name="movies">
+                                    <select class="PF-movie-category-c" id="PF-movie-category-i"
+                                        onchange="FiltroCtg(this.value);">
+                                        <option value="0">Seleccionar</option>
+                                        <option value="ctg1">Drama</option>
+                                        <option value="ctg2">Aventura</option>
+                                        <option value="ctg3">Terror</option>
+                                        <option value="ctg4">Fantasía</option>
+    
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="PF-busqueda-list">
+    
+                        <div class="PF-list-box">
+    
+                            <div class="PF-list-elements" id="pel-1">
+                                <div class="PF-list-cont-movie">
+                                    <div class="PF-list-name-movie"><a href="#">Un Amigo Abominable</a></div>
+                                    <a class="PF-list-img-movie" href="#">
+                                        <img src="img/Resul_busqueda/abominable.jpg" alt="pelicula1">
+                                    </a>
+                                </div>
+                                <div class="PF-see-more"><a href="#">ver más</a></div>
+                            </div>
+                            <div class="PF-list-elements" id="pel-2">
+                                <div class="PF-list-cont-movie">
+                                    <div class="PF-list-name-movie"><a href="#">Joker</a></div>
+                                    <a class="PF-list-img-movie" href="#">
+                                        <img src="img/Resul_busqueda/joker.jpg" alt="pelicula2" width="150px">
+                                    </a>
+                                </div>
+                                <div class="PF-see-more"><a href="#">ver más</a></div>
+                            </div>
+                            <div class="PF-list-elements" id="pel-3">
+                                <div class="PF-list-cont-movie">
+                                    <div class="PF-list-name-movie"><a href="#">Maléfica</a></div>
+                                    <a class="PF-list-img-movie" href="#">
+                                        <img src="img/Resul_busqueda/malefica.jpg" alt="pelicula3" width="150px">
+                                    </a>
+                                </div>
+                                <div class="PF-see-more"><a href="#">ver más</a></div>
+                            </div>
+                            <div class="PF-list-elements" id="pel-4">
+                                <div class="PF-list-cont-movie">
+                                    <div class="PF-list-name-movie"><a href="#">Agente 00-Gato</a></div>
+                                    <a class="PF-list-img-movie" href="#">
+                                        <img src="img/Resul_busqueda/agente-gato.jpg" alt="pelicula4" width="150px">
+                                    </a>
+                                </div>
+                                <div class="PF-see-more"><a href="#">ver más</a></div>
+                            </div>
+                            <div class="PF-list-elements" id="pel-5">
+                                <div class="PF-list-cont-movie">
+                                    <div class="PF-list-name-movie"><a href="#">Proyecto Géminis</a></div>
+                                    <a class="PF-list-img-movie" href="#">
+                                        <img src="img/Resul_busqueda/proyecto-geminis.jpg" alt="pelicula5" width="150px">
+                                    </a>
+                                </div>
+                                <div class="PF-see-more"><a href="#">ver más</a></div>
+                            </div>
+    
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </div>
+            </section>
+            <!-- End Search-Results  -->
+    
+    
+
+    </main>
+    <footer>
+        <section>
+            <div class="footer">
+                <div class="footer-final">
+                        <div class="brand-gray"><img src="img/logo-gray.png" alt=""></div>
+                        <div class="servicioCliente">
+                           <div class="tituloquejas">
+                            <span class="icon-whatsapp"></span>
+                            <p>¿En que podemos ayudarte?</p>
+                           </div>
+                            <span>Comunicate con nosotros, estaremos en contacto</span>
+                        </div>
+                </div>
+                <div class="krights">
+                    Copyrights reserved 2019 by CinemaTickets
+                </div>
+            </div>
+        </section>
+    </footer>
+   
+    <script src="js/arscript.js"></script>
+    <script src="js/PF-search-results.js"></script>
+</body>
+</html>
