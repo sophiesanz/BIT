@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "9007e535-4f5d-47cc-995c-44de487f7060",
+		"name": "prueba_usuario_backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prueba_usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3977/api/prueba_usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"prueba_usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear_usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Sofia\",\n    \"edad\":29,\n    \"correo\":\"sofisanchezba@hotmail.com\",\n    \"password\":\"String\",\n    \"imagen\":\"Stringimagen\",\n    \"role\":\"Admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3977/api/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar_usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3977/api/usuario/5dcf4ef6706e9d48659e81f6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"usuario",
+						"5dcf4ef6706e9d48659e81f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar_usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n     \"nombre\":\"Afiffe\",\n    \"edad\":29,\n    \"correo\":\"sofisanchezba@hotmail.com\",\n    \"password\":\"String\",\n    \"imagen\":\"Stringimagen\",\n    \"role\":\"user\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3977/api/usuario/5dcf556d5d061a4be8bbee1b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"usuario",
+						"5dcf556d5d061a4be8bbee1b"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -21,3 +21,8 @@ console.log(mAutomovil.acelerar());
 console.log(mAutomovil.acelerar());
 console.log(" ");
 
+
+
+
+
+

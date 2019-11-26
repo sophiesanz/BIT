@@ -1,0 +1,44 @@
+<!-- Comunicacion de la logica hacia el html-->
+<!-- {{title}} hace referencia a un componente -->
+<!-- <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button> -->
+<app-header></app-header>
+<!-- Envio datos de aqui a ts con un metodo que se llama con click -->
+<!-- <button class="btn btn-primary" (click)="modificar('1')">Jumbotron</button>
+<button class="btn btn-primary" (click)="modificar('2')">Slide</button>
+<button class="btn btn-primary" (click)="modificar('3')">Text</button> -->
+
+<!-- Agregamos las paginas a la url -->
+<button class="btn btn-primary" [routerLink] = "['']">Jumbotron</button>
+<button class="btn btn-primary" [routerLink] = "['/slide']">Slide</button>
+<button class="btn btn-primary" [routerLink] = "['/text']">Text</button>
+
+<!-- <div [ngSwitch]="cambiar">
+<app-content *ngSwitchCase = "'1'"></app-content>
+<app-content-slide *ngSwitchCase ="'2'"></app-content-slide>
+<app-text *ngSwitchCase ="'3'"></app-text>
+</div> -->
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<div *ngFor= 'let persona of personas'>
+    <p>{{persona.nombre + " " + persona.edad}}</p>
+</div>
+
+
+
+<!-- <app-content *ngIf="cambiar == '1'"></app-content>
+<app-content-slide *ngIf="cambiar == '2'"></app-content-slide>
+<app-text *ngIf="cambiar == '3'"></app-text> -->
+
+

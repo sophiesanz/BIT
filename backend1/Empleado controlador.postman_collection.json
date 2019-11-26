@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "a7335167-5bb3-424d-be4d-6103e70973d4",
+		"name": "Empleado controlador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3977/api/prueba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"prueba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"adrian\",\n\t\"apellido\":\"tibocha\",\n\t\"edad\":\"26\",\n\t\"meses\":22,\n\t\"salario\":1000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3977/api/empleado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar empleado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3977/api/empleado/5dca73c6f62a2b389c0afdef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"empleado",
+						"5dca73c6f62a2b389c0afdef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"adrian\",\n\t\"apellido\":\"tibocha\",\n\t\"edad\":\"30\",\n\t\"meses\":22,\n\t\"salario\":2200000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3977/api/empleado/5dca73c6f62a2b389c0afdef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"empleado",
+						"5dca73c6f62a2b389c0afdef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3977/api/empleado/5dca73c6f62a2b389c0afdef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3977",
+					"path": [
+						"api",
+						"empleado",
+						"5dca73c6f62a2b389c0afdef"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
